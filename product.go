@@ -17,6 +17,8 @@ type Product struct {
 
 	Offer bool `json:"offer,omitempty"`
 
+	PayAtHotel bool `json:"pay_at_hotel,omitempty"`
+
 	Nonrefundable bool `json:"nonrefundable,omitempty"`
 
 	Price string `json:"price,omitempty"`

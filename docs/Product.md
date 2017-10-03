@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Code** | **string** | product code | [optional] [default to null]
 **Offer** | **bool** |  | [optional] [default to null]
+**PayAtHotel** | **bool** |  | [optional] [default to null]
 **Nonrefundable** | **bool** |  | [optional] [default to null]
 **Price** | **string** |  | [optional] [default to null]
 **Currency** | **string** |  | [optional] [default to null]

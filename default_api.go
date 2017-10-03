@@ -134,7 +134,9 @@ func (a *DefaultApiService) BookProvisionCodePost(ctx context.Context, name []st
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
-	localVarFormParams.Add("name", parameterToString(name, "multi"))
+	for _, val := range name {
+		localVarFormParams.Add("name", parameterToString(val, "multi"))
+	}
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
 	if err != nil {
 		return successPayload, nil, err
@@ -550,7 +552,9 @@ func (a *DefaultApiService) SearchPost(ctx context.Context, pax []string, checki
 		return successPayload, nil, err
 	}
 
-	localVarQueryParams.Add("pax", parameterToString(pax, "multi"))
+	for _, val := range pax {
+		localVarQueryParams.Add("pax", parameterToString(val, "multi"))
+	}
 	localVarQueryParams.Add("checkin", parameterToString(checkin, ""))
 	localVarQueryParams.Add("checkout", parameterToString(checkout, ""))
 	localVarQueryParams.Add("client_nationality", parameterToString(clientNationality, ""))

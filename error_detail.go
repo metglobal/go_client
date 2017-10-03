@@ -10,9 +10,9 @@
 
 package hotelspro_client
 
-type ErrorDetails struct {
+type ErrorDetail struct {
 
 	ErrorCode string `json:"error_code"`
 
-	Detail *ErrorDetailsDetail `json:"detail,omitempty"`
+	Detail string `json:"detail"`
 }

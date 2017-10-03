@@ -34,7 +34,7 @@ type BookResponse struct {
 
 	Nonrefundable string `json:"nonrefundable"`
 
-	View string `json:"view,omitempty"`
+	View bool `json:"view,omitempty"`
 
 	Price string `json:"price"`
 

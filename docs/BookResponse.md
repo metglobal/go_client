@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **Currency** | **string** |  | [default to null]
 **MealtypeCode** | **string** |  | [default to null]
 **Nonrefundable** | **string** |  | [default to null]
-**View** | **string** |  | [optional] [default to null]
+**View** | **bool** |  | [optional] [default to null]
 **Price** | **string** |  | [default to null]
 **Policies** | [**[]Policy**](Policy.md) |  | [default to null]
 **Rooms** | [**[]Room**](Room.md) |  | [default to null]
